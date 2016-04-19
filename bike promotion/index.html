@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+
+	<head>
+	<title> Explore BikeX </title>
+	<meta charset="utf-8">
+	<meta description ="Newly Launched cool bike">	
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+
+	<!-- Bootstrap file for responsive web interface -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- External css and javascript files -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/file.js"></script>
+
+	<!-- google font CDN address -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+	</head>
+
+<!-- Content of the body -->
+	<body>
+
+		<!--- Heading section of the page-->
+		<nav id="page_nav" class="navigation_page">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-6 pull-left">
+						<div class="navbar-brand">
+							<img src="assets/image/logo.svg" alt="page_logo" class="img-responsive"  width="100%" height="100%" />						
+						</div>
+					</div>
+
+					<div class="col-md-6-offset-4 pull-right">
+
+							<li id="register_link" data-toggle="modal" data-target="#myModal"><a href="#form"> Click for pre-booking </a></li>
+							<!-- Modal -->
+							<div id="myModal" class="modal fade" role="dialog">
+							  <div class="modal-dialog">
+
+							    <!-- Modal content-->
+							    <div class="modal-content">
+							      <div class="modal-body">
+							      <!-- form on model to pre-booking for the bike-->
+							        <form id="myform">
+							         <h2> Pre-order details </h2><hr>
+							          <div class="form-group">
+							            <label for="customer-name" class="control-label">Name:</label>
+							            <input type="text" class="form-control" id="customer-name" required="required">
+							          </div>
+
+							          <div class="form-group">
+							            <label for="customer-email" class="control-label">Your Email:</label>
+							            <input type="email" class="form-control" id="customer-email" required="required">
+							          </div>
+
+							        </form>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							       <button type="button" class="btn btn-primary" onclick="messageReturn()">Pre-booking</button>
+							      </div>
+							    </div>
+
+							  </div>
+							</div>
+							
+
+						
+						</div>
+				</div>
+<!-- Header Image section -->
+				<div class ="row" id="imageHeader">
+					
+					<div class="col-md-12 col-md-offset-2">
+						<img src="assets/image/header_pic.png" alt="BIKEX" class="img-responsive" id="img1">
+						
+						
+						<img src="assets/image/soon.png" alt="" class="img-responsive" id="img2">
+					</div>
+
+				</div>
+<!-- End of header image section-->
+	</div>
+
+
+	</nav>
+
+	<main id="main_content">
+		<div class="container">
+
+			<div class="nav navbar-static-top navbar-inverse">
+
+				<ul class="nav nav-pills nav-justified" id="tabs" role="tab-list">
+					<li class="active"><a data-toggle="tab" role="tab" href="#feature">Features</a></li>
+					<li><a data-toggle="tab" role="tab"href="#specs">Specification</a></li>
+					<li><a data-toggle="tab" role="tab"href="#contact">Contact</a></li>
+					
+				</ul>			
+
+			</div>
+<!-- redirecting content of tab when specific tab is clicked-->
+			<div class="tab-content">
+				<div id="feature" class="tab-pane active">
+
+					<h3> Cool features with new generation bike !!!</h3>
+					<hr />
+					<div class="row">
+						<div class="col-md-6 pull-left">
+							<img src="assets/image/cool.jpg" class="img-responsive" alt="Cool Bike" height="350px" width="400px">
+						</div>
+						<div class="col-md-6 pull-right">
+							<p>Amazing new generation bike  with revolutionize and innovative design is launching on December 25th 2016. <em>Cool with the style and cool with the feature </em> is the slogan of this product.</p>
+
+							
+							<p> Unique features include : </p>
+							<hr />
+							<ul id="featurelist">
+								<li>Can be folded in half</li>
+								<li>Easy to carry around</li>
+								<li> upto 9 gears with super speed and flexibility</li>
+								<li> Ultra-light body weighing 12 pounds </li>
+								<li> Retailer sale from stores locations: <em>Helsinki, London, Paris, Tokyo, New York.</em></li>
+
+							</ul>
+
+						</div>
+					</div>
+
+
+				</div>
+
+				<div id="specs" class="tab-pane">
+
+				
+				<div class="col-md-12 col-md-offset-5">
+				<h4><strong>Technical Details : </strong></h4>		
+
+					<table>
+						
+						<tbody>
+							<tr>
+								<th>Weight</th>
+								<td>12 lb </td>
+							</tr>
+
+							<tr>
+								<th>Gears</th>
+								<td>3 / 5 / 9 </td>
+							</tr>
+
+							<tr>
+								<th>Price</th>
+								<td>359&euro; </td>
+							</tr>
+
+							<tr>
+								<th>Framesize</th>
+								<td>20 inches </td>
+							</tr>
+
+							<tr>
+								<th>Standover Height</th>
+								<td>21 inches </td>
+							</tr>
+
+							<tr>
+								<th>Wheel Size</th>
+								<td>22 inches </td>
+							</tr>
+
+						</tbody>
+
+					</table>
+					</div>
+
+				</div>
+
+				<div id="contact" class="tab-pane">
+
+					<form id="contact_form" method="POST" action="">
+
+					<h5> <strong> Feedback Form: </strong></h5>
+					<hr />
+					 <div class="row">
+
+					 	<div class="col-md-6">
+					 	<input type="text" class="form-control" id="customer-name" required="required" placeholder="Your Name">
+					 	</div>
+
+					 	<div class="col-md-6">
+
+					 		<input type="email" class="form-control" id="customer-email" required="required" placeholder="Your Email">
+
+					 	</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<textarea id="user_feedback" placeholder="Enter your questions and feedback" required="required"></textarea>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 col-md-offset-4">
+						<button class="btn-primary btn-lg"> Send </button>
+						</div>
+
+					</div>
+					</form
+
+				</div>
+				
+			</div>
+
+		
+
+			</div>
+		</div>
+		</main>
+
+
+
+
+
+	</body>
+
+
+
+
+</html>
